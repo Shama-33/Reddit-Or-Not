@@ -1,0 +1,58 @@
+﻿.post-item {
+    border: 0.8px dotted #bdbdbd;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    width: 800px;
+    margin: 0 auto 10px; /* Center align the item templates */
+    background-color: white;
+}
+
+    .post-item:hover {
+        border-style: solid;
+        border-color: lightgray;
+        box-shadow: 2px;
+    }
+
+.community-info {
+    display: flex;
+    align-items: center;
+}
+
+.community-image {
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    margin-right: 10px;
+    object-fit: contain;
+    object-position: center;
+    border-width: 0.8px;
+    border-color: black;
+    border-style: solid;
+}
+
+.posted-by {
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+.post-content {
+    margin-top: 10px;
+}
+
+
+
+.post-image img {
+    width: 70%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+    object-fit: contain;
+    object-position: center;
+    border-width: 0.6px;
+    border-color: lightblue;
+    border-style: solid;
+    border-style: dotted;
+}

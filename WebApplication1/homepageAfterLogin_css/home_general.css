@@ -1,0 +1,21 @@
+@import url('home_general.css');
+.total
+{
+    display: flex;
+    flex-direction: column;
+    font-family: IBMPlexSans,Arial,  sans-serif;
+   /* position: relative;*/
+
+
+}
+.Under_nav
+{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 48;
+    left: 0;
+    right:0;
+    bottom:0;
+    font-family: IBMPlexSans,Arial,  sans-serif;
+}

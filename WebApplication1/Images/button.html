@@ -1,0 +1,33 @@
+<div class="vote-buttons">
+    <button class="upvote"></button>
+    <button class="downvote"></button>
+  </div>
+
+  <body>
+    .vote-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .upvote, .downvote {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .upvote {
+        background-image: url('https://www.redditstatic.com/desktop2x/img/sprite_icons.png');
+        background-position: -88px -162px;
+      }
+      
+      .downvote {
+        background-image: url('https://www.redditstatic.com/desktop2x/img/sprite_icons.png');
+        background-position: -88px -240px;
+      }
+      
+  </body>

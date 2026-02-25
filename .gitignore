@@ -1,0 +1,22 @@
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+
+## Build results
+**/bin/
+**/obj/
+
+## NuGet Packages
+packages/
+
+## User uploads
+**/Avatars/*
+**/CommunityImages/*
+!**/Avatars/.gitkeep
+!**/CommunityImages/.gitkeep
+
+## Database
+*.mdf
+*.ldf

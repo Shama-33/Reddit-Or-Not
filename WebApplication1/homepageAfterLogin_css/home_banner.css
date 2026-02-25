@@ -1,0 +1,277 @@
+.banner
+{
+    height: 48px;
+    border-bottom-color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+    box-shadow: 1px 0px 1px;
+   /* border-bottom-width: 1px;
+    border-top-width:0px ;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-color: grey;*/
+   position: fixed;
+   top:0px;
+   right:0px;
+   left:0px;
+   width: 100%;
+   background-color: white;
+   z-index: 10;
+  
+   
+
+    
+
+}
+
+/*banner 1 & 2*/
+.banner1_2
+{
+    flex:2;
+    display: flex;
+     flex-direction: row;
+     align-items: center;
+    
+    
+
+}
+.banner_3
+{
+    left:1000px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    vertical-align: center;
+}
+
+
+
+/*first section-banner*/
+.banner_1
+{
+    flex:1.6;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height: 48px;
+    margin-right: 8px;
+    
+    
+    
+    
+}
+.icon1
+{
+    height:40px;
+    object-position: center;
+    object-fit: contain;
+    padding:2px;
+    width:60%;
+    cursor: pointer;
+    
+
+}
+
+
+
+/*second sectionbanner*/
+.searchbar_div
+{
+    font-family: IBMPlexSans , Arial, sans-serif;
+    /*max-width: 500px;*/
+    /*background-color: blue;*/
+    flex:6;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    
+    
+}
+.search-bar
+{
+    background-color: rgb(248, 247, 248) ;
+    border-radius: 1.25em;
+    border-width: 0.8px;
+    border-color: rgb(255,255,255);
+    border-style: solid;
+    font-family: IBMPlexSans, Arial,sans-serif;
+    font-size: 16px;
+    font-stretch: 100%;
+    font-style: normal;
+    height: 40px;
+    margin-left:  36px;
+    margin-right: 10px;
+    background-color: #F6F7F8;
+    padding-left: 10px;
+    vertical-align: center;
+    width: 580px;
+    
+   
+   
+
+
+                
+
+}
+.search-bar:hover
+{
+    border-width: 0.8px;
+    border-color: blue;
+}
+.banner_profile
+{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-trigger
+{
+    
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1;
+    border-color: #ffffff;
+    border-style: solid;
+    display: inline-block;
+   
+
+}
+.dropdown-trigger:hover{
+    border-color: rgb(191, 189, 189);
+   border: 1;
+   overflow: visible;
+   
+}
+
+.dropdown-content {
+    display: none;
+    /*position: fixed;
+    height: 200px;
+    width: 100px;*/
+    position: absolute;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 100%;
+    right: 10;
+    left: -30;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index:5000;
+    overflow: visible;
+    height: fit-content;
+}
+.dropdown-content a {
+display: block;
+background-color: #fff;
+color: #080808;
+padding: 5px 10px;
+text-decoration: none;
+
+
+}
+.dropdown-content a:hover
+{
+    background-color: #ccc;
+}
+
+
+
+.banner_profile:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    height: fit-content;
+   
+  
+    background: transparent;
+    right: 10px;
+    
+    
+
+    
+    
+}
+
+.pop_button
+{
+    margin-left: 5px;
+    height: 48px;
+    width: 48px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+}
+.pop_button:hover{
+    background-color: beige;
+}
+.dropdown-trigger1
+{
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: inline-block;
+   
+
+}
+.dropdown-trigger1:hover{
+    background-color: beige;
+   overflow: visible;
+   
+}
+.dropdown-content1 {
+    display: none;
+    /*position: fixed;
+    height: 200px;
+    width: 100px;*/
+    position: absolute;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 100%;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index:5000;
+    overflow: visible;
+    height: fit-content;
+}
+.dropdown-content1 a {
+display: block;
+background-color: #000000;
+color: #fff;
+padding: 5px 10px;
+text-decoration: none;
+
+
+}
+.dropdown-content1 a:hover
+{
+    background-color: #000000;
+    color: #fff;
+}
+
+
+
+.pop_button:hover .dropdown-content1 {
+    display: block;
+    position: absolute;
+    height: fit-content;
+    background: transparent;
+    right: 10px;
+    
+    
+
+    
+    
+}
+
+

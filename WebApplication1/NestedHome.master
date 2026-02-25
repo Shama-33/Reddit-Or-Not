@@ -1,0 +1,213 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="NestedHome.master.cs" Inherits="WebApplication1.NestedMasterPage1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="homepageAfterLogin_css/home_sidebar.css" rel="stylesheet" />
+
+    <title></title>
+    <%--CSS; bootstrap,datatables,fontawesome--%>
+    <link href="Bootstrap/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="DataTables/CSS/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <%--Javascript--%>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include jQuery -->
+
+    <script defer src="Bootstrap/Javascript/bootstrap.bundle.min.js"></script>
+
+    <script defer src="fontawesome\js\all.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        .leftlow {
+        }
+
+        .low_paragraph {
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+            .leftside {
+                display: none;
+            }
+
+            .content-container {
+       
+                margin-left: 0px;
+                padding: 5px;
+                overflow-y: scroll; /* Add scrollable behavior */
+                max-height: 90vh; /* Set the height to fill remaining viewport space */
+                
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            .content-container {
+                
+                margin-left: 270px;
+                padding: 5px;
+                overflow-y: scroll; /* Add scrollable behavior */
+                height: 90vh; /* Set the height to fill remaining viewport space */
+                
+            }
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderchildhead" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="leftside" style="background-color: white;">
+        <div class="lefthigh">
+            <div class="classleft1">Communities</div>
+
+            <div class="classleft">
+                <a href="CreateCommunity.aspx" style="text-decoration: none; color: black;">
+                    <img src="images/plus.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;" />
+                    Create Community
+                </a>
+            </div>
+            <div class="classleft">
+                <a href="YourCommunities.aspx" style="text-decoration: none; color: black;">
+                    <img src="images/plus.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;" />
+                    Your Communities
+                </a>
+            </div>
+
+            <div class="classleft1">
+                FEEDS
+            </div>
+            <div class="classleft">
+                <a href="homepage_webform.aspx" style="text-decoration: none; color: black;">
+                <img src="images/home.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;">
+                Home
+                </a>
+            </div>
+
+            <div class="classleft">
+                <a href="popularall.aspx" style="text-decoration: none; color: black;">
+                <img src="images/popular.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;">
+                Popular
+                </a>
+            </div>
+            <div class="classleft">
+                <a href="ALLP.aspx" style="text-decoration: none; color: black;">
+                <img src="images/famous.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;">
+                All
+                </a>
+            </div>
+            <div class="classleft1">
+                ABOUT
+            </div>
+            <div class="classleft">
+                 <a href="About_Reddit.aspx" style="text-decoration: none; color: black;">
+                <img src="images/ask.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;">
+                About Reddit
+                     </a>
+            </div>
+            <div class="classleft1">
+                SEARCH TO EXPLORE
+            </div>
+            <div class="classleft">
+                <a href="SearchPage.aspx" style="text-decoration: none; color: black;">
+                <img src="images/gaming.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;" />
+                <span>Gaming</span>
+                    </a>
+                
+            </div>
+            <div class="classleft">
+                <a href="SearchPage.aspx" style="text-decoration: none; color: black;">
+                <img src="images/sports.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;">
+                Sports
+                    </a>
+                                
+            </div>
+            <div class="classleft">
+                <a href="SearchPage.aspx" style="text-decoration: none; color: black;">
+                <img src="images/bar-graph.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;">
+                Business/Eco...
+                    </a>
+                                
+            </div>
+            <div class="classleft">
+                <a href="SearchPage.aspx" style="text-decoration: none; color: black;">
+                <img src="images/bitcoin.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;">
+                Crypto
+                    </a>
+                                
+            </div>
+            <div class="classleft">
+                <a href="SearchPage.aspx" style="text-decoration: none; color: black;">
+                <img src="images/television.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;">
+                Television
+                    </a>
+                               
+            </div>
+            <div class="classleft">
+                <a href="SearchPage.aspx" style="text-decoration: none; color: black;">
+                <img src="images/famous.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;">
+                Celebrity
+                    </a>
+                                
+            </div>
+            <div class="classleft">
+                <a href="SearchPage.aspx" style="text-decoration: none; color: black;">
+                ... More Topics
+                    </a>
+                                
+            </div>
+
+            <div class="classleft1">
+                OTHERS
+            </div>
+            
+
+
+            <div class="classleft">
+                <a href="Profile.aspx" style="text-decoration: none; color: black;">
+                    <img src="images/hacker.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;" />
+                    Profile
+                </a>
+            </div>
+            <div class="classleft">
+                <a href="post.aspx" style="text-decoration: none; color: black;">
+                    <img src="images/hacker.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;" />
+                    Create Post
+                </a>
+            </div>
+           
+            <div class="classleft">
+                <a href="Notifications.aspx" style="text-decoration: none; color: black;">
+                <img src="images/notification.png" style="height: 15px; width: 15px; object-fit: contain; margin-left: 5px;">
+                Notifications
+                    </a>
+            </div>
+            <hr />
+
+            <div class="leftlow">
+                <div class="low_paragraph">
+                    <b>Create Communitnities<br>
+                        Follow your favorite communities<br>
+                        and start taking part in<br>
+                        conversations.<br>
+                    </b>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="content-container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderchildbody" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
